@@ -56,7 +56,7 @@ Sample Output 1
   * 배열의 크기 N/2만큼 반복문을 돌면서 현재위치(i)의 값과 뒤에서 i위치(n-(i+1))의 값을을 차례로 swap해줌.  
   * 시간복잡도 O(N/2)   
     
-    ```
+```
 	static int[] reverseArray(int[] a) {
 		for (int i = 0, n = a.length / 2; i < n; i++) {
 			int tmp = a[i];
@@ -66,11 +66,10 @@ Sample Output 1
 		}
 		return a;
 	}
-```
-  
-   
+```  
 
 - - -
 
 
-[source]:   https://www.hackerrank.com/challenges/arrays-ds/problem
+[source](https://www.hackerrank.com/challenges/arrays-ds/problem)
+  
