@@ -71,9 +71,6 @@ _ _ _
 
    
 
-- - -
 
+[source](https://www.hackerrank.com/challenges/array-left-rotation/problem)
 
-[source]:   https://www.hackerrank.com/challenges/array-left-rotation/problem
-
-[source]:   https://www.hackerrank.com/challenges/arrays-ds/problem
