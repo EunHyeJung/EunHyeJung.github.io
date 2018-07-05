@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "인터럽트의 원리"
-date:   2018-06-30
+date:   2018-07-05
 author: EunHye Jung
 categories: os
 comment : true
