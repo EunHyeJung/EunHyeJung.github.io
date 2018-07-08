@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "20180708_TIL"
+date:   2018-07-08
+author: EunHye Jung
+categories: TIL
+comment : true
+tags:	TIL
+cover:  "/assets/instacode.png"
+---
+   
+## 오늘 한 일   
+  
+* 운영체제와 정보기술의 원리 5장 프로세스 관리를 다시한번 리뷰하고 반정도 포스팅했다.  
+* JVM, JRE, JDK에 대하여 학습하고, 자바 직렬화에 대해 학습했다.  
+* 유트부에서 박재성님의 spring-boot 이용한 웹사이트 개발하기 강좌를 보면서,  
+  bootstrap을 이용해 회원가입 페이지까지 만들어보았다.  
+  구글 확장기능중에 LiveReload를 이용하니 html 파일을 수정하고 refresh안해도 자동으로 화면에 반영되는게 신기했다.  
+  
+- - -
+  
+### 오늘 느낀점  
+* 주말인데도 평일보다 더 게을러 지는건 왜일까  
+  
+
+- - -
+   
+### 내일 할 것  
+* 운영체제 5장 프로세스 관리 블로그 정리
+* 면접준비
+* 정렬알고리즘 학습하기    
