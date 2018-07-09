@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "빅데이터 관련 기술, 기초 용어"
-date:   2018-06-09
+date:   2018-07-09
 author: EunHye Jung
 categories: etc
 tags:	bigdata
