@@ -57,7 +57,8 @@ cover:  "/assets/instacode.png"
   
   
   
-  
-[참조(빅데이터를 위한 플랫폼들)](https://d2.naver.com/helloworld/29533) 
-[참조(Hadoop에서의 실시간 SQL 질의: Impala)](https://d2.naver.com/helloworld/246342)
-[참조(클라우데라)](https://www.cloudera.com/)
+       
+[참조(빅데이터를 위한 플랫폼들)](https://d2.naver.com/helloworld/29533)    
+[참조(Hadoop에서의 실시간 SQL 질의: Impala)](https://d2.naver.com/helloworld/246342)   
+[참조(클라우데라)](https://www.cloudera.com/)    
+ 
