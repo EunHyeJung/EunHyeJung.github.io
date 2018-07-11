@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Singleton Pattern - Design Pattern"
+title:  싱글톤 패턴(Singleton Pattern)"
 date:   2018-07-09
 author: EunHye Jung
 categories: java
