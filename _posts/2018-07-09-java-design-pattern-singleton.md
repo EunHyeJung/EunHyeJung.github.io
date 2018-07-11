@@ -20,9 +20,7 @@ cover:  "/assets/instacode.png"
   
 - - -    
    
-*
-이글은 [참조](https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples)를 번역한 것이며, 개인 공부목적으로 정리되었기에, 오역이나 잘못된 부분이 있을 수 있습니다.  *
-    
+이글은 [참조](https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples)를 번역한 것이며, 개인 공부목적으로 정리되었기에, 오역이나 잘못된 부분이 있을 수 있습니다.
   　
    
 ## Singleton Pattern   
@@ -35,10 +33,8 @@ cover:  "/assets/instacode.png"
 * `private 생성자` : 외부에서 객체의 생성을 제한함!  
 * `public static 메소드` : 클래스의 인스턴스를 반환, 다른곳에서 싱글톤 클래스의 객체를 얻을 수 있는 접근점!  
    
-     　   
 - - -   
    
-　  　   
 ### Eager initilization   
   
 이른 초기화에서는, 싱글톤 클래스의 객체는 클래스가 로딩되는 시점에 생성된다.  
@@ -62,10 +58,8 @@ cover:  "/assets/instacode.png"
 그리고 만약에 클라이언트가 `getInstacne` 메소드를 호출하지 않는다면, 우리는 객체 생성하는것을 피해야한다! (사용하지도 않는것을 만드는건 자원낭비)  
 또한, 이 메소드는 어떠한 예외처리도 하지않는다.  
    
-　  
 - - -   
    
-　  　
 ### static block initialization  
     
 * 정적초기화블록 구현은 이른 초기화방법과 비슷하다. 하지만, 정적블록초기화는 클래스의 객체가 예외처리를 하는 static 블록에서 만들어진다.  
@@ -93,7 +87,6 @@ cover:  "/assets/instacode.png"
    
 　  
 - - -   
-   
 　  
 ### Lazy Initialization   
    
@@ -116,11 +109,9 @@ public class LazyInitializedSingleton {
     }
 } 
 ```    
-   
 　  
 - - -   
    
-　  
 ### Thread Safe Singleton   
    
 * thread-safe한 싱글톤을 만드는 더 쉬운 방법은, 한번에 오직 한 스레드만 메소드에 접근가능하도록, 전역 접근 메소드를 synchronized 키워드를 이용해서 만드는 것이다.   
