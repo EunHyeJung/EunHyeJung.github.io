@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Iterator, ListIteraotr"
+title:  "Iterator, ListIterator"
 date:   2018-06-28
 author: EunHye Jung
 categories: java
@@ -14,17 +14,18 @@ cover:  "/assets/instacode.png"
    
 ### For-each    
    For each 반복문은 컬렉션 안에 있는 항목들을 순회하는것을 의미한다!    
-```
+     
+`  
 // for-each를 이용해서 컬렉션 'c'에 있는 원소들 출력
 for(Element e : c) {
 	System.out.prinln(e);
 }
-```
+`
   
   Note : 자바8에서는, for-each 반복문을 다음과 같은 람다표현식으로 간단하게 이용할 수 있다.   
-  ```
-elements.forEach( e -> System.out.println(e));
-```
+
+`elements.forEach( e -> System.out.println(e));`
+
 
 - - -
 
@@ -37,12 +38,13 @@ Cursor는 인터페이스다. 그리고 컬렉션에서 데이터들을 하나�
      Iterator는 컬렉션을 순회하는 목적으로 사용하는, 컬렉션프레임워크가 제공하는 인터페이스이다.    
      Iterator를 사용하면, 컬렉션에 있는 항목들을 순차적으로 접근할 수 있다.   
      
-    ```
+```
       // Iterator를 사용해서 컬렉션 'c'에 있는 원소들 출력
       for(Iterator i = c.iterator(); i.hasNext(); ) {
       	System.out.println(i.next());
       }
-    ```
+```  
+   
        
     Iterator 인터페이스는 3가지 메소드를 가진다.  
     * boolean hasNext() : iterator가 다음에 조회할 원소를 가지고 있으면 true리턴.   
@@ -63,10 +65,12 @@ Cursor는 인터페이스다. 그리고 컬렉션에서 데이터들을 하나�
      * int nextIndex() : next()를 호출한 후 반환되는 원소의 index값을 리턴.   
      * int previousIndex() : previous()를 호출한 후 반환되는 원소의 indeㅌ값 리턴. (만약, listIterator가 제일 처음에 위치한다면, -1이 리턴됨.)  
 
-     
-
    
 - - -
-### 관련문제
-[BOJ1406.에디터](https://www.acmicpc.net/problem/1406)
-[BOJ5397.키로커](https://www.acmicpc.net/problem/5397/)
+    
+### 관련문제     
+    
+[BOJ1406.에디터](https://www.acmicpc.net/problem/1406)    
+[BOJ5397.키로커](https://www.acmicpc.net/problem/5397/)   
+   
+     
