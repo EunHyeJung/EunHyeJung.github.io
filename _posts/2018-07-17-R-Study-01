@@ -1,0 +1,105 @@
+---
+layout: post
+title:  "R로 데이터 분석하기-01"
+date:   2018-07-17
+author: EunHye Jung
+categories: bigdata
+tags:	bigdata
+cover:  "/assets/instacode.png"
+---  
+
+#### 데이터 프레임(Data Frame)    
+   
+* `데이터 프레임(Data Frame)`은 행과 열로 구성된 사각형 모양의 표처럼 생겼음.  
+* `열`은 속성을 나타내며, `칼럼(column)` 또는 `변수(variable)`라고 불린다.  
+* `행`은 한 사람의 정보를 나타내고, `Row`또는 `Case`라고 불린다.   
+* 데이터가 크다고 표현될때, 행이 많다고 하면, 컴퓨터가 느려지는 문제를 겪게 된다.  이 문제를 해결하기 위해, 메모리와 CPU를 늘려보고 그래도 힘들면 분산처리 시스템을 구축한다.  
+  열이 많다는 것은, 변수가 많아 진다는 뜻이고, 적용하는 분석 기술이 달라지기 때문에, 분석 방법에 한계가 생긴다. 따라서 고급 분석 방법이 필요하게 된다.  
+  
+<b> 데이터 프레임 생성 예제 </b>   
+   
+```
+enghlish <- c(90, 80, 60, 70)
+math <- c(50, 60 ,100 ,120) 
+df_midterm <- data.frame(english, math)
+   
+mean(df_midterm$english) # df_midterm의 english로 평균 산출
+mean(df_midterm$math) # df_midterm의 math로 평균 산출
+
+df_midterm <- df.frame(enghlish = c(90, 80, 60, 70),
+						math = c(50, 60, 100 , 20))
+```
+  
+* `$(달러)` 기호는 데이터 프레임에 있는 변수를 지정할 때 사용   
+    
+    
+- - -   
+    
+#### 액셀파일 불러오기    
+   
+* 액셀파일을 읽어오기   
+  * 패키지 설치  
+    `install.packages("readx1")`    
+  * readx1 패키지 로드  
+    `libary("readx1")`      
+  * 액셀파일을 불러와서 df_exam에 할당   
+    `df_sample = read_excel("excel_sample.xlsx")`    
+    
+* 액셀 파일 첫번째 행이 변수명이 아니라면 ?  
+  `read_excel()`은 기본적으로 엑셀 파일의 첫번째 행을 변수명으로 인식해 불러온다.  
+  변수명 없이 첫번째 행부터 바로 데이터가 시작되는 경우,   
+  첫번째 행의 데이터가 변수명으로 지정되면서, 유실되는 문제가 발생한다.  
+  이럴 때, read_excel()을 통해 액셀파일을 불러올때 아래와같이 `col_names=F`로 파라미터값을 설정하면 첫번째 행은 변수명이 아닌 데이터로 인식해 불러오며, 변수명은 'X＿＿숫자'로 자동 지정된다.     
+     
+  `read_excel("excel_sample.xlsx", col_names = F)`   
+      
+      
+* CSV 파일 불러오기   
+     
+`df_csv_sample <- read.csv("csv_sample.csv")    `
+   
+   
+- - -    
+   
+   
+#### 데이터 파악하기    
+   
+* 데이터가 주어졌을때 가장 먼저 하는 일은 데이터의 전반적인 구조를 파악하는것!   
+  어떤 변수들이 있는지, 몇 행으로 구성되어 있는지를 파악하면, 이 과정에서 분석 방향에 대한 힌트를 얻을 수 있다.  
+* 데이터를 파악할때 사용하는 함수들   
+  * `head()` : 데이터 앞부분 출력  
+  * `tail()` : 데이터 뒷부분 출력 
+  * `View()` : 뷰어 창에서 데이터 확인  
+  * `dim()` : 데이터 차원 출력  
+  * `str()` : 데이터 속성 출력  
+  * `summary()` : 요약 통계량 출력      
+    `summary()`를 실행해 출력되는 요약통계량은 다음과 같은 의미를 지님  
+    * Min : 최솟값(Minimum)   
+    * 1st Qu : 1사분위수(1st Quantile) : 하위25% 지점에 위치하는 값  
+    * Median : 중앙값(Median)  
+    * Mean : 평균(Mean)   
+    * 3rd Qu : 3사분위수(3rd Quantile) : 하위75% 지점에 위치하는 값  
+    * Max : 최댓값(Maximum)    
+       
+       
+    
+
+- - -  
+   
+#### 데이터 전처리  
+   
+분석에 적합하게 데이터를 가공하는 작업을 `데이터 전처리(Data Preprocessing)`이라고 한다.  
+`dqlyr`은 데이터 전처리 작업에 가장 많이 사용되는 패키지  
+   
+<b> dqlyr의 주요 함수 </b>   
+* filter() : 행추출  
+* select() : 열(변수)추출  
+* arrange() : 정렬  
+* mutate() : 변수추가  
+* summaries() : 통계치산출  
+* group_by() : 집단별로 나누기  
+* left_join() : 데이터 합치기(열)  
+* bind_rows() :데이터 합치기(행)     
+   
+   
+   
