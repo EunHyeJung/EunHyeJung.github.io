@@ -10,7 +10,7 @@ cover:  "/assets/instacode.png"
   
 - - -    
   
-`이 글은 아래 참조 사이트를 기반으로 이해한 내용을 개인적인 학습을 목적으로 정리한 것이며, 오역이나 잘못된 내용이 있을 수 있습니다.`  
+*이 글은 아래 참조 사이트를 기반으로 이해한 내용을 개인적인 학습을 목적으로 정리한 것이며, 오역이나 잘못된 내용이 있을 수 있습니다.*
    
 - - -    
    
@@ -54,11 +54,12 @@ Bag Of Words 모델은 (하나가 아닌 여러)문서들의 셋(set)을 비교�
    
 이 문서들에 대해 BoW를 적용해보면 다음과 같은 결과물을 얻을 수 있을 것이다.   
    
+   
 | <center></center>| <center>I</center> |<center>love</center> |<center> dog </center> |<center> hate </center> |<center> and </center> |<center> knitting </center> |<center> is </center> |<center> my </center> |<center> hobby </center> |<center> passion </center> |
-|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 |<center>Doc 1</center>|<center>1</center>|<center>1</center>|<center>1</center>|<center></center>|<center></center>|<center></center>|<center></center>|<center></center>|<center></center>|<center></center>|
 |<center>Doc 2</center>|<center>1</center>|<center></center>|<center>1</center>|<center>1</center>|<center>1</center>|<center>1</center>|<center></center>|<center></center>|<center></center>|<center></center>|
-|<center>Doc 3</center>|<center></center>|<center></center>|<center></center>|<center></center>|<center>1</center>|<center>1</center>|<center>1</center>|<center>2</center>|<center>1</center>|<center>1</center>|     
+|<center>Doc 3</center>|<center></center>|<center></center>|<center></center>|<center></center>|<center>1</center>|<center>1</center>|<center>1</center>|<center>2</center>|<center>1</center>|<center>1</center>|           
    
 BoW는 문서내의 단어 빈도만 고려한다.  
 BoW에서 문서의 중요한 단어들은 문서내에서 가장 많이 나타난 단어들이 된다.  
