@@ -43,7 +43,7 @@ cover:  "/assets/instacode.png"
   유효-무효 비트값이 무효인 경우는 페이지가 현재 메모리에 없는 경우를 의미할 수 있지만, 경우에 따라서는 그 페이지가 속한 주소 영역을 페이지가 참조하지 않은 경우도 있다.   
    
    
-  ![content01](/assets/contents/content09.PNG)  
+  ![content01](/assets/contents/content09.png)  
    
    
 * CPU가 참조하려는 페이지가 현재 메모리에 올라와있지 않아 유효-무효 비트가 무효로 세팅되어 있는 경우를 `페이지 부재(page fault)`라고 한다.  
