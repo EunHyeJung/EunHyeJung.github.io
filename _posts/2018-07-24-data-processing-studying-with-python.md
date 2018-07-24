@@ -111,7 +111,7 @@ frame
 - - -     
    
   
-## 
+## 데이터 전처리 실습해보기   
   
 [참조](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews)   
    
@@ -183,24 +183,28 @@ _ _ _
   
   
 <b> 텍스트 데이터 전처리 이해하기 </b>   
+   
 [참조1](https://github.com/twitter/twitter-korean-text)   
 [참조2](https://docs.google.com/presentation/d/10CZj8ry03oCk_Jqw879HFELzOLjJZ0EOi4KJbtRSIeU/edit#slide=id.g71b871db5_0_51)   
+  
 * 정규화(Normalization)  (입니다 ㅋㅋㅋ -> 입니다, 샤릉해 -> 사랑해)   
   한국어를 처리하는 예시입니닼ㅋㅋㅋㅋ -> 한국어를 처리하는 예시입니다 ㅋㅋ    
+    
 * 토큰화(Tokenization)    
   한국어를 처리하는 예시입니다 ㅋㅋ   
   -> 한국어Noun,를Josa,처리Noun,하는(Verb),예시(Noun),입(Adjective),니다(Emoi),ㅋㅋ(KoreanParticle)    
+    
 * 어근화(Stemming)  (입니다 -> 이다)   
   입니다 -> 이다 
   한국어를 처리하는 예시입니다 ㅋㅋ   
   -> 한국어Noun,를Josa,처리Noun,하다(Verb),예시(Noun),이다(Adjective), ㅋㅋ(KoreanParticle) 
-  
+    
 * 어구 추출(Pharse Extraction)    
   한국어를 처리하는 예시입니다 ㅋㅋ -> 한국어, 처리, 예시, 처리하는 예시     
-   
+    
 BeautifulSoup이 설치되어 있지 않으면 우선 설치해준다.  
 BeatuifulSoup은 HTML, XML 파일에서 원하는 데이터를 손쉽게 파싱해주는 라이브러리이다. 
-   
+    
 ```python   
 !pip install BeautifulSoup4
 ```   
