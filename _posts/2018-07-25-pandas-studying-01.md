@@ -29,69 +29,8 @@ cover:  "/assets/instacode.png"
   df.head(3)
   ```  
   
-  
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Park Name</th>
-      <th>State</th>
-      <th>Acres</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
-    </tr>
-    <tr>
-      <th>Park Code</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>ACAD</th>
-      <td>Acadia National Park</td>
-      <td>ME</td>
-      <td>47390</td>
-      <td>44.35</td>
-      <td>-68.21</td>
-    </tr>
-    <tr>
-      <th>ARCH</th>
-      <td>Arches National Park</td>
-      <td>UT</td>
-      <td>76519</td>
-      <td>38.68</td>
-      <td>-109.57</td>
-    </tr>
-    <tr>
-      <th>BADL</th>
-      <td>Badlands National Park</td>
-      <td>SD</td>
-      <td>242756</td>
-      <td>43.75</td>
-      <td>-102.50</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-    
+  ![content01](/assets/contents/da_content07.PNG)  
+   
     
 _ _ _    
     
@@ -137,67 +76,7 @@ _ _ _
 df.loc[['BADL', 'ARCH', 'ACAD']]   
 ```
    
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Park Name</th>
-      <th>State</th>
-      <th>Acres</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
-    </tr>
-    <tr>
-      <th>Park Code</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>BADL</th>
-      <td>Badlands National Park</td>
-      <td>SD</td>
-      <td>242756</td>
-      <td>43.75</td>
-      <td>-102.50</td>
-    </tr>
-    <tr>
-      <th>ARCH</th>
-      <td>Arches National Park</td>
-      <td>UT</td>
-      <td>76519</td>
-      <td>38.68</td>
-      <td>-109.57</td>
-    </tr>
-    <tr>
-      <th>ACAD</th>
-      <td>Acadia National Park</td>
-      <td>ME</td>
-      <td>47390</td>
-      <td>44.35</td>
-      <td>-68.21</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+![content02](/assets/contents/da_content08.PNG)  
    
    
 * 행을 추출하는 방법 중에 데이터 프레임을 슬라이싱하는 방법도 있다.   
@@ -207,137 +86,16 @@ df[:3]
 ```  
    
    
+![content03](/assets/contents/da_content09.PNG)  
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Park Name</th>
-      <th>State</th>
-      <th>Acres</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
-    </tr>
-    <tr>
-      <th>Park Code</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>ACAD</th>
-      <td>Acadia National Park</td>
-      <td>ME</td>
-      <td>47390</td>
-      <td>44.35</td>
-      <td>-68.21</td>
-    </tr>
-    <tr>
-      <th>ARCH</th>
-      <td>Arches National Park</td>
-      <td>UT</td>
-      <td>76519</td>
-      <td>38.68</td>
-      <td>-109.57</td>
-    </tr>
-    <tr>
-      <th>BADL</th>
-      <td>Badlands National Park</td>
-      <td>SD</td>
-      <td>242756</td>
-      <td>43.75</td>
-      <td>-102.50</td>
-    </tr>
-  </tbody>
-</table>
-</div>
    
    
 ```python   
 df[3:6]
 ```
    
-   
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+![content04](/assets/contents/da_content10.PNG)  
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Park Name</th>
-      <th>State</th>
-      <th>Acres</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
-    </tr>
-    <tr>
-      <th>Park Code</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>BIBE</th>
-      <td>Big Bend National Park</td>
-      <td>TX</td>
-      <td>801163</td>
-      <td>29.25</td>
-      <td>-103.25</td>
-    </tr>
-    <tr>
-      <th>BISC</th>
-      <td>Biscayne National Park</td>
-      <td>FL</td>
-      <td>172924</td>
-      <td>25.65</td>
-      <td>-80.08</td>
-    </tr>
-    <tr>
-      <th>BLCA</th>
-      <td>Black Canyon of the Gunnison National Park</td>
-      <td>CO</td>
-      <td>32950</td>
-      <td>38.57</td>
-      <td>-107.72</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-   
     
 _ _ _    
     
@@ -383,62 +141,11 @@ $ 'state', 'acres' 칼럼에서 5개의 행 추출
 df[['state', 'acres]][:5]
 ```     
    
-   
+![content05](/assets/contents/da_content11.PNG)  
+  
+    
+    
+     
+     
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>state</th>
-      <th>acres</th>
-    </tr>
-    <tr>
-      <th>Park Code</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>ACAD</th>
-      <td>ME</td>
-      <td>47390</td>
-    </tr>
-    <tr>
-      <th>ARCH</th>
-      <td>UT</td>
-      <td>76519</td>
-    </tr>
-    <tr>
-      <th>BADL</th>
-      <td>SD</td>
-      <td>242756</td>
-    </tr>
-    <tr>
-      <th>BIBE</th>
-      <td>TX</td>
-      <td>801163</td>
-    </tr>
-    <tr>
-      <th>BISC</th>
-      <td>FL</td>
-      <td>172924</td>
-    </tr>
-  </tbody>
-</table>
-</div>  
     
