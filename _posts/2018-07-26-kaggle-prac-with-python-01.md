@@ -197,7 +197,7 @@ print(train["Survived"][train["Sex"]== 'female'].value_counts(normalize = True))
   
 우선 새로운 칼럼 "Child"을 만들고 "NaN"을 할당하자.   
   
-````python   
+```python   
 train["Child"] = float('NaN')    
 ```   
    
