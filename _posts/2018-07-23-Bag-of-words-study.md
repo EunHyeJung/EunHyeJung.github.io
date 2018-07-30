@@ -3,8 +3,8 @@ layout: post
 title:  "BOW(Bag-Of-Words) 정리"
 date:   2018-07-23
 author: EunHye Jung
-categories: bigdata
-tags:	bigdata
+categories: DataAnalysis
+tags:	DataAnalysis DataScience
 cover:  "/assets/instacode.png"
 ---  
   
