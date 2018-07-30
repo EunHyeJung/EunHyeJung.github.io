@@ -3,7 +3,7 @@ layout: post
 title:  "데이터 사이언스 기초지식 - 01"
 date:   2018-07-30
 author: EunHye Jung
-categories: data_analysis
+categories: DataAnalysis
 tags: bigdata
 cover:  "/assets/instacode.png"
 ---  
