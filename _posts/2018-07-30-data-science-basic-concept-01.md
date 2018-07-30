@@ -127,7 +127,7 @@ _ _ _
   정확도가 높은 분석방법이라 실제로 많이 쓰이고 있다.   
   
   
-![content06](assets/contents/da_content17.PNG)    
+![content06](/assets/contents/da_content17.PNG)    
   
   
 - - -  
@@ -136,7 +136,7 @@ _ _ _
 ### 예측분석, 어떤 방법을 써야할까?   
   
   
-![content07](assets/contents/da_content18.PNG)    
+![content07](/assets/contents/da_content18.PNG)    
    
    
 * <b> 데이터량이 많을때  </b>  
