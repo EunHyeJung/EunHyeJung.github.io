@@ -3,8 +3,8 @@ layout: post
 title:  "데이터 전처리 & 워드클라우드 시각화 실습 (Python)"
 date:   2018-07-24
 author: EunHye Jung
-categories: bigdata
-tags: bigdata
+categories: data_analysis
+tags: bigdata data_analysis
 cover:  "/assets/instacode.png"
 ---  
    
