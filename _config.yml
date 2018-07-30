@@ -65,8 +65,8 @@ descriptions:
   - cat: os
     desc: "operating system"
     
-  - cat: data_analysis
-    desc: "bigdata, data_analysis"
+  - cat: DataAnalysis
+    desc: "Bigdata, DataAnalysis, DataScience"
     
   - cat: etc
     desc: "etc"
