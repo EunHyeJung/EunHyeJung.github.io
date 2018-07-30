@@ -3,7 +3,7 @@ layout: post
 title:  "데이터 사이언스 기초지식 - 01"
 date:   2018-07-30
 author: EunHye Jung
-categories: DataAnalysis
+categories: data_analysis
 tags: bigdata
 cover:  "/assets/instacode.png"
 ---  
@@ -21,7 +21,7 @@ cover:  "/assets/instacode.png"
   여기서 A는 `독립변수`, B는 `종속변수`가 됨.  
   (A에따라 B는 달라지고, B는 A에 종속되어 있음)   
   
-* 가장 단순한 에측분석으로는 `단순 회기 분석(Simple Regression Analysis)`이 있음.   
+* 가장 단순한 에측분석으로는 `단순 회 분석(Simple Regression Analysis)`이 있음.   
   가장  오래되고 많이 쓰이며, 하나의 변수로 하나의 변수를 예측하는 기법.   
 * 여러개의 변수로 하나의 변수를 예측하는 기법으로는 `중다 회귀 분석(Multiple Regression Analysis)`이 있음.  
 * 일반적으로 단순회귀분석과 중다회귀분석을 딱히 구분하지는 않음.  
