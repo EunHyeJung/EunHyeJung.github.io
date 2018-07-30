@@ -35,7 +35,7 @@ cover:  "/assets/instacode.png"
 * 디스크에 데이터를 읽고 쓰기 위해서는 암(arm)이 해당 섹터가 위치한 실린더로 이동한 후 원판이 회전하여 디스크 헤더가 저장된 섹터 위치에 도달하여야 한다.  
   
   
-![content01](/assets/contents/os_content12.PNG)    
+![content01](/assets/contents/os_content12.png)    
   
    
 - - -   
