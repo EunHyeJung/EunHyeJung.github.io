@@ -118,10 +118,54 @@ public String longestCommonPrefix(String[] strs) {
    
 * 공간 복잡도 (Space Complexity)  
   O(1)
+  
+   
+_ _ _   
+  
+  
+#### 접근법 #3. Divide and Conquer     
+     
+문자열 Si부터 Sj까지의 가장 긴 공통의 접두사를 구하는 식은 LCP(Si, .. , Sj)라고 하자.  
+그리고 큰 하나의 문제를 LCP(Si, ..., Smid)와 LCP(Smid+1, ..., Sj)로 2개의 부분문제로 분할한다.  
+여기서 mid값은 i와 j의 중간값(i+j/2)이 된다.   
+lcpLeft와 lcpRight 솔루션을 사용하여 문제 LCP(Si, ..., Sj)의 해를 구한다.   
+해를 구하기 위해 우리는 lcpLeft에 있는 문자와 lcpRight에 있는 문자 하나하나를 비교하면서 일치하지 않는 문자가 있는 부분을 찾아낸다.  
+     
+  
+  ![content03](/assets/contents/leetcode14-content-03.PNG)    
+   
+   
+```java
+public String longestCommonPrefix(String[] strs) {
+	if(strs = null strss.lenth == 0) {
+    	return "";
+    }
+    return longestCommonPrefix(strs, 0, srs.length-1);
+}
+
+public String longestCommonPrefix(String[] strs, int l, int r) {
+	if(l == r) {
+    	return strs[l];
+    } else {
+    	int mid = (l + r) / 2;
+        String lcpLeft = longestCommonPrefix(strs, l, mid);
+        String lcpRight = longestCommonPrefix(str, mid+1, r);
+        return commonPrefix(lcpLeft, lcpRight);
+    }
+    
+}
+
+public String commonPrefix(String left, String right) {
+	int min = Math.min(left.length(), right.length());
+    for(int i = 0; i <min; i++) {
+    	if(left.charAt(i) != right.charAt(i)) {
+        	return left.substring(0, i);
+        }
+    }
+    return left.substring(0, min);
+}
+```   
    
   
- 
-_ _ _   
-    
-    
+
    
