@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "디스크 관리 (디스크 구조, 디스크 스케줄링)"
-date:   2018-07-3-
+date:   2018-07-30
 author: EunHye Jung
 categories: os
 comment : true
