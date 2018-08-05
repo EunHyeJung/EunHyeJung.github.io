@@ -12,7 +12,7 @@ cover:  "/assets/instacode.png"
    
 - - -    
      
-*이 글은 [참조 사이트](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/getting-started-with-python?ex=1)를 기반으로 이해한 내용을 개인적인 학습을 목적으로 정리한 것이며, 오역이나 잘못된 내용이 있을 수 있습니다.*
+*이 글은 [참조 사이트](https://docs.djangoproject.com/en/2.1/intro/overview/)를 기반으로 이해한 내용을 개인적인 학습을 목적으로 정리한 것이며, 오역이나 잘못된 내용이 있을 수 있습니다.*
    
 - - -  
    
