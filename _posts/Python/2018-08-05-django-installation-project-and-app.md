@@ -22,7 +22,7 @@ cover:  "/assets/instacode.png"
   `$python -m venv myvenv`   
    
     
-####<font color = "#0E4D92"> 가상환경 사용하기(Windoows)  </font>
+#### <font color = "#0E4D92"> 가상환경 사용하기(Windoows)  </font>
   
    <b> command line</b>   
   `C:\Users\EunHye\dev\djangoproject> myvenv\Scripts\activate`   
@@ -129,8 +129,8 @@ _ _ _
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app-name',  # 새로 생성한 앱 추가 
-]
-```    
+  ]
+  ```    
    
    
 - - -   
