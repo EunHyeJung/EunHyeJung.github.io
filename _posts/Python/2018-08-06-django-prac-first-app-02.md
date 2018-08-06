@@ -204,8 +204,10 @@ _ _ _
    아래 코드는 ↓     
    
    ```
+   {% raw %}
    {% block content %}
    {% endblock %}　　
+   {% endraw %}
    ```
       
    `block`을 의미한다. 템플릿 태그로 HTML내에 들어갈 수 있는 공간을 만든것이다.  
