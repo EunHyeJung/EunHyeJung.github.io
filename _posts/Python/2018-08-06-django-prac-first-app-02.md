@@ -124,14 +124,14 @@ _ _ _
 * `blog.css`파일을 열어서 새로운 스타일을 정의.  
   
   <b>blog/static/css/blog.css</b>    
-  ```    
-  h1 a {
-  	color :  #FCA205;
-  }
-  body {
-  	padding-left : 15px;
-  }
-  ```   
+       
+  h1 a {    
+  	color :  #FCA205;   
+  }     
+  body {   
+  	padding-left : 15px;    
+  }    
+        
    
   `h1 a `는 CSS 셀렉터(Selector)라고 함.  
    h1 요소안에 a 요소를 넣어 스타일을 적용할 수 있다는 뜻.  
