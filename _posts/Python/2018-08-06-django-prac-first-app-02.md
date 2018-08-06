@@ -137,7 +137,7 @@ _ _ _
   body {   
   	padding-left : 15px;    
   }    
-   {% endraw %}
+  {% endraw %}
 
   ```         
    
@@ -152,13 +152,13 @@ _ _ _
    {% load static %}
    
    <html>
-    <head>
+   <head>
         <title>Django  blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    {% endraw %}
+   </head>
+   {% endraw %}
  
    ```   
    
