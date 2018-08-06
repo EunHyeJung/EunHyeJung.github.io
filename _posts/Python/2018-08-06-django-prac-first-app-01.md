@@ -54,7 +54,7 @@ python maange.py sqlmigrate app-name migration-name
   
 * 장고는 모델에 대한 관리용 인터페이스를 모두 자동으로 생성해준다.  
   
-#### <fonr color="gray"> 관리자 생성하기 </font>   
+#### <font color="212930"> 관리자 생성하기 </font>   
   
 <b> command line</b>   
 `(myvenv)~$ python manage.py createsuperuser` 
@@ -68,7 +68,7 @@ python maange.py sqlmigrate app-name migration-name
 ###  <font color = "#0E4D92"> Blog App 만들어보기 (STEP-1) </font>     
     
    
-#### <fonr color="#212930"> app 생성 </font>   
+#### <font color="#212930"> app 생성 </font>   
   
 * 생성한 프로젝트내부에 별도의 블로그 앱을 생성.  
   
@@ -86,7 +86,7 @@ python maange.py sqlmigrate app-name migration-name
    
 _ _ _    
    
-#### <fonr color="#212930"> 블로그 글 모델 만들기 </font>   
+#### <font color="#212930"> 블로그 글 모델 만들기 </font>   
    
 * `blog/models.py` 파일에 다음과 같은 코드 작성하여 모델 정의.  
   
@@ -114,13 +114,13 @@ _ _ _
 _ _ _    
    
    
-#### <fonr color="#212930"> 데이터베이스에 모델을 위한 테이블 만들기 </font>   
+#### <font color="#212930"> 데이터베이스에 모델을 위한 테이블 만들기 </font>   
   
    
 * 마이그레이션 파일 생성   
   
   <b> command line</b>   
-  ```(myvenv)~/proj$ python manage.py makemigrations blog`  
+  `(myvenv)~/proj$ python manage.py makemigrations blog`  
   
   생성된 마이그레이션 파일을 열어보면 다음의 내용을 확인할 수 있다.  
     
@@ -163,7 +163,7 @@ _ _ _
 _ _ _    
    
    
-#### <fonr color="#212930"> 장고 관리자에서 모델 관리해보기 </font>   
+#### <font color="#212930"> 장고 관리자에서 모델 관리해보기 </font>   
   
 * 우리가 모델링한 모델들을 관리자페이지에서 추가,수정,삭제 할 수 있다.   
   `blog/admin.py` 파일에 다음과 같이 코드를 수정한다.  
@@ -182,7 +182,7 @@ _ _ _
 - - -    
    
    
-#### <fonr color="#212930"> 장고 뷰 생성하기 </font>   
+#### <font color="#212930"> 장고 뷰 생성하기 </font>   
   
   * 뷰(View)는 애플리케이션의 로직을 넣는 부분  
   * 뷰는 `모델`에서 필요한 정보를 받아와서, `템플릿`에 전달하는 역할을 담당.   
@@ -202,7 +202,7 @@ _ _ _
 - - -    
    
    
-#### <fonr color="#212930"> 블로그 글 목록을 나타내는 URL 설정하기 </font>   
+#### <font color="#212930"> 블로그 글 목록을 나타내는 URL 설정하기 </font>   
   
   * `blog` 애플리케이션에서 메인 projectname/urls.py 파일로 url들을 가져온다.  
   
@@ -238,7 +238,7 @@ _ _ _
 - - -    
    
    
-#### <fonr color="#212930"> 템플릿, HTML 파일 생성하기 </font>   
+#### <font color="#212930"> 템플릿, HTML 파일 생성하기 </font>   
    
 * 템플릿이란 서로 다른 정보를 일정한 형태로 표시하기 위해 재사용 가능한 파일을 말함.  
   예를 들면, 회사의 회의록을 생각해보자.   
