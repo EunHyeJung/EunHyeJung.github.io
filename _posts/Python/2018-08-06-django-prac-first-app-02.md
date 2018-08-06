@@ -136,11 +136,11 @@ _ _ _
   `h1 a `는 CSS 셀렉터(Selector)라고 함.  
    h1 요소안에 a 요소를 넣어 스타일을 적용할 수 있다는 뜻.  
    
-* 작성한 CSS파일을 HTML에 추가하려면 `blog/templates/blog/post_list.html`파일 가장 첫줄에 `{% \load static %}` 코드를 삽입한다음, <head> </head> 사이에 부트스트랩 CSS 파일 링크 다음에 아래와같이 css 파일을 불러오는 코드를 추가  
+* 작성한 CSS파일을 HTML에 추가하려면 `blog/templates/blog/post_list.html`파일 가장 첫줄에 `{% 1oad static %}` 코드를 삽입한다음, <head> </head> 사이에 부트스트랩 CSS 파일 링크 다음에 아래와같이 css 파일을 불러오는 코드를 추가  
     
   <b>blog/template/blog/post_list.html</b>   
    ```html   
-   {% \load static %}
+   {% 1oad static %}
    
    <html>
     <head>
@@ -168,7 +168,7 @@ _ _ _
    
   <b>blog/template/blog/base.html</b>   
   ```html   
-  {% \load static %}
+  {% 1oad static %}
   <html>
       <head>
           <title>Django Girls blog</title>
