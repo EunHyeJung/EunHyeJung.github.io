@@ -59,6 +59,7 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>   
   ```     
+  {% raw %}
    <html>
     <head>
         <title>Django blog</title>
@@ -77,6 +78,7 @@ _ _ _
         {% endfor %}
     </body>
   </html>
+  {% endraw %}
   ```    
    
    
@@ -88,9 +90,11 @@ _ _ _
 * 부트스트랩을 적용시키기 위해 `.html` 파일 내 `<head>`에 아래 링크 삽입.  
   
   <b>blog/templates/blog/post_list.html</b>   
-  ```       
+  ```   
+  {% raw %}
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  {% endraw %}
   ```   
   
   위의 방법은 프로젝트에 새 파일을 추가하는 것이 아닌, 인터넷에 있는 파일을 연결하는것!  
@@ -140,6 +144,7 @@ _ _ _
     
   <b>blog/template/blog/post_list.html</b>       
    ```     
+   {% raw %}
    {% load static %} 
    <html>
    <head>
@@ -149,6 +154,7 @@ _ _ _
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
    </head>
    </html>
+   {% endraw %}
    ```   
    
    
@@ -168,6 +174,7 @@ _ _ _
    
   <b>blog/template/blog/base.html</b>   
   ```   
+  {% raw %}
   {% load static %}
   <html>
       <head>
@@ -191,6 +198,7 @@ _ _ _
           </div>
     </body>
   </html>
+  {% endraw %}
   ```    
    
    아래 코드는 ↓     
@@ -208,6 +216,7 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>  
   ```   
+  {% raw %}
   {% extends 'blog/base.html' %}
   {% block content %}
   	  {% for post in posts %}
@@ -219,7 +228,8 @@ _ _ _
               <p> {{ post.text|linebreaksbr}} </p>
           </div>
       {% endfor %}
-  {% endblock %}
+  {% endblock %} 
+  {% endraw %}
   ```
   
    
