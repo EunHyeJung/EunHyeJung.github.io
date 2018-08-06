@@ -124,7 +124,7 @@ _ _ _
 * `blog.css`파일을 열어서 새로운 스타일을 정의.  
   
   <b>blog/static/css/blog.css</b>    
-  ```css    
+  ```    
   h1 a {
   	color :  #FCA205;
   }
