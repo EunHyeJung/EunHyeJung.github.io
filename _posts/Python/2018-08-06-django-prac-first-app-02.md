@@ -59,7 +59,6 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>   
   ```     
-   {% raw %}
    <html>
     <head>
         <title>Django blog</title>
@@ -78,7 +77,6 @@ _ _ _
         {% endfor %}
     </body>
   </html>
-  {% endraw %}
   ```    
    
    
@@ -124,15 +122,16 @@ _ _ _
 
 * `blog.css`파일을 열어서 새로운 스타일을 정의.  
   
-  <b>blog/static/css/blog.css</b>    
+  <b>blog/static/css/blog.css</b>   
     
+  ```     
   h1 a {    
   	color :  #FCA205;   
   }     
   body {   
   	padding-left : 15px;    
   }    
-
+  ```   
    
   `h1 a `는 CSS 셀렉터(Selector)라고 함.  
    h1 요소안에 a 요소를 넣어 스타일을 적용할 수 있다는 뜻.  
@@ -141,7 +140,6 @@ _ _ _
     
   <b>blog/template/blog/post_list.html</b>       
    ```     
-   {% raw %}
    {% load static %} 
    <html>
    <head>
@@ -151,7 +149,6 @@ _ _ _
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
    </head>
    </html>
-   {% endraw %}
    ```   
    
    
@@ -171,7 +168,6 @@ _ _ _
    
   <b>blog/template/blog/base.html</b>   
   ```   
-  {% raw %}
   {% load static %}
   <html>
       <head>
@@ -195,15 +191,16 @@ _ _ _
           </div>
     </body>
   </html>
-  {% endraw %}
   ```    
    
    아래 코드는 ↓     
    
-   `{% block content %}`  
-   `{% endblock %}　　　`  
+   ```
+   {% block content %}
+   {% endblock %}　　
+   ```
       
-   `block`을 의미한다. 템플릿 태그 {% blaock %}으로 HTML내에 들어갈 수 있는 공간을 만든것이다.  
+   `block`을 의미한다. 템플릿 태그로 HTML내에 들어갈 수 있는 공간을 만든것이다.  
   이제 base.html을 확장해 다른 템플릿에도 가져다 쓸 수 있게되었다.  
    
    
@@ -211,7 +208,6 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>  
   ```   
-  {% raw %}
   {% extends 'blog/base.html' %}
   {% block content %}
   	  {% for post in posts %}
@@ -224,7 +220,6 @@ _ _ _
           </div>
       {% endfor %}
   {% endblock %}
-  {% endraw %}
   ```
   
    
