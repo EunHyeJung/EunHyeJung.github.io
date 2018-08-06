@@ -58,8 +58,7 @@ _ _ _
   이제 넘겨진 `posts` 변수를 HTML에 나타내주기 위해 다음과 같이 post_list.html 파일을 수정해준다.  
   
   <b>blog/templates/blog/post_list.html</b>   
-  ```html      
-   {% raw %}
+  ```     
    <!DOCTYPE html>
    <html>
     <head>
@@ -79,7 +78,6 @@ _ _ _
         {% endfor %}
     </body>
   </html>
-  {% endraw %}
   ```    
    
    
@@ -91,12 +89,9 @@ _ _ _
 * 부트스트랩을 적용시키기 위해 `.html` 파일 내 `<head>`에 아래 링크 삽입.  
   
   <b>blog/templates/blog/post_list.html</b>   
-  ```html   
-  {% raw %}
+  ```       
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  {% endraw %}
-
   ```   
   
   위의 방법은 프로젝트에 새 파일을 추가하는 것이 아닌, 인터넷에 있는 파일을 연결하는것!  
@@ -130,14 +125,12 @@ _ _ _
   
   <b>blog/static/css/blog.css</b>    
   ```        
-  {% raw %}
   h1 a {    
   	color :  #FCA205;   
   }     
   body {   
   	padding-left : 15px;    
   }    
-  {% endraw %}
 
   ```         
    
@@ -147,8 +140,7 @@ _ _ _
 * 작성한 CSS파일을 HTML에 추가하려면 `blog/templates/blog/post_list.html`파일 가장 첫줄에 {% load static %} 코드를 삽입한다음, <head> </head> 사이에 부트스트랩 CSS 파일 링크 다음에 아래와같이 css 파일을 불러오는 코드를 추가  
     
   <b>blog/template/blog/post_list.html</b>   
-   ```html 
-   {% raw %}
+   ``` 
    {% load static %}
    
    <html>
@@ -158,8 +150,7 @@ _ _ _
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
    </head>
-   {% endraw %}
- 
+   </html>
    ```   
    
    
@@ -178,8 +169,7 @@ _ _ _
   그 다음 아래의 코드를 base.html에 작성한다.  
    
   <b>blog/template/blog/base.html</b>   
-  ```html   
-  {% raw %} 
+  ```   
   {% load static %}
   <html>
       <head>
@@ -203,7 +193,6 @@ _ _ _
           </div>
     </body>
   </html>
-  {% endraw %}
   ```    
    
    아래 코드는 ↓     
@@ -218,8 +207,7 @@ _ _ _
 * 이제 blog/templates/blog/post_list.html에서 위에서 작성한 템플릿 코드를 확장하도록 아래와 같이 코드를 수정한다.  
   
   <b>blog/templates/blog/post_list.html</b>  
-  ```html   
-  {% raw %}
+  ```   
   {% extends 'blog/base.html' %}
   {% block content %}
   	  {% for post in posts %}
@@ -232,7 +220,6 @@ _ _ _
           </div>
       {% endfor %}
   {% endblock %}
-  {% endraw %}
   ```
   
    
