@@ -59,7 +59,7 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>   
   ```     
-   <!DOCTYPE html>
+   {% raw %}
    <html>
     <head>
         <title>Django blog</title>
@@ -78,6 +78,7 @@ _ _ _
         {% endfor %}
     </body>
   </html>
+  {% endraw %}
   ```    
    
    
@@ -124,7 +125,7 @@ _ _ _
 * `blog.css`파일을 열어서 새로운 스타일을 정의.  
   
   <b>blog/static/css/blog.css</b>    
-  ```        
+    
   h1 a {    
   	color :  #FCA205;   
   }     
@@ -132,17 +133,16 @@ _ _ _
   	padding-left : 15px;    
   }    
 
-  ```         
    
   `h1 a `는 CSS 셀렉터(Selector)라고 함.  
    h1 요소안에 a 요소를 넣어 스타일을 적용할 수 있다는 뜻.  
    
-* 작성한 CSS파일을 HTML에 추가하려면 `blog/templates/blog/post_list.html`파일 가장 첫줄에 {% load static %} 코드를 삽입한다음, <head> </head> 사이에 부트스트랩 CSS 파일 링크 다음에 아래와같이 css 파일을 불러오는 코드를 추가  
+* 작성한 CSS파일을 HTML에 추가하려면 `blog/templates/blog/post_list.html`파일을 다음과 같이 수정.    
     
-  <b>blog/template/blog/post_list.html</b>     
-  {% load static %}   
+  <b>blog/template/blog/post_list.html</b>       
    ```     
-   
+   {% raw %}
+   {% load static %} 
    <html>
    <head>
         <title>Django  blog</title>
@@ -151,6 +151,7 @@ _ _ _
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
    </head>
    </html>
+   {% endraw %}
    ```   
    
    
@@ -169,8 +170,9 @@ _ _ _
   그 다음 아래의 코드를 base.html에 작성한다.  
    
   <b>blog/template/blog/base.html</b>   
-  {% load static %}
   ```   
+  {% raw %}
+  {% load static %}
   <html>
       <head>
           <title>Django Girls blog</title>
@@ -193,6 +195,7 @@ _ _ _
           </div>
     </body>
   </html>
+  {% endraw %}
   ```    
    
    아래 코드는 ↓     
@@ -208,6 +211,7 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>  
   ```   
+  {% raw %}
   {% extends 'blog/base.html' %}
   {% block content %}
   	  {% for post in posts %}
@@ -220,6 +224,7 @@ _ _ _
           </div>
       {% endfor %}
   {% endblock %}
+  {% endraw %}
   ```
   
    
