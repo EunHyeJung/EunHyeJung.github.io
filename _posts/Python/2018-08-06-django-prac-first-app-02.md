@@ -59,6 +59,7 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>   
   ```html      
+   {% raw %}
    <!DOCTYPE html>
    <html>
     <head>
@@ -78,6 +79,7 @@ _ _ _
         {% endfor %}
     </body>
   </html>
+  {% endraw %}
   ```    
    
    
@@ -90,8 +92,11 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>   
   ```html   
+  {% raw %}
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  {% endraw %}
+
   ```   
   
   위의 방법은 프로젝트에 새 파일을 추가하는 것이 아닌, 인터넷에 있는 파일을 연결하는것!  
@@ -125,22 +130,26 @@ _ _ _
   
   <b>blog/static/css/blog.css</b>    
   ```        
+  {% raw %}
   h1 a {    
   	color :  #FCA205;   
   }     
   body {   
   	padding-left : 15px;    
   }    
+   {% endraw %}
+
   ```         
    
   `h1 a `는 CSS 셀렉터(Selector)라고 함.  
    h1 요소안에 a 요소를 넣어 스타일을 적용할 수 있다는 뜻.  
    
-* 작성한 CSS파일을 HTML에 추가하려면 `blog/templates/blog/post_list.html`파일 가장 첫줄에 `{% 1oad static %}` 코드를 삽입한다음, <head> </head> 사이에 부트스트랩 CSS 파일 링크 다음에 아래와같이 css 파일을 불러오는 코드를 추가  
+* 작성한 CSS파일을 HTML에 추가하려면 `blog/templates/blog/post_list.html`파일 가장 첫줄에 {% load static %} 코드를 삽입한다음, <head> </head> 사이에 부트스트랩 CSS 파일 링크 다음에 아래와같이 css 파일을 불러오는 코드를 추가  
     
   <b>blog/template/blog/post_list.html</b>   
-   ```html   
-   {% 1oad static %}
+   ```html 
+   {% raw %}
+   {% load static %}
    
    <html>
     <head>
@@ -149,6 +158,8 @@ _ _ _
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
+    {% endraw %}
+ 
    ```   
    
    
@@ -168,7 +179,8 @@ _ _ _
    
   <b>blog/template/blog/base.html</b>   
   ```html   
-  {% 1oad static %}
+  {% raw %} 
+  {% load static %}
   <html>
       <head>
           <title>Django Girls blog</title>
@@ -191,6 +203,7 @@ _ _ _
           </div>
     </body>
   </html>
+  {% endraw %}
   ```    
    
    아래 코드는 ↓     
@@ -206,6 +219,7 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>  
   ```html   
+  {% raw %}
   {% extends 'blog/base.html' %}
   {% block content %}
   	  {% for post in posts %}
@@ -218,6 +232,7 @@ _ _ _
           </div>
       {% endfor %}
   {% endblock %}
+  {% endraw %}
   ```
   
    
