@@ -58,6 +58,8 @@ _ _ _
   이제 넘겨진 `posts` 변수를 HTML에 나타내주기 위해 다음과 같이 post_list.html 파일을 수정해준다.  
   
   <b>blog/templates/blog/post_list.html</b>   
+
+{% raw %}
   ```html
    <html>
     <head>
@@ -78,6 +80,8 @@ _ _ _
     </body>
   </html>  
   ```   
+{% endraw %}
+  
    
    
 - - -
@@ -139,7 +143,8 @@ _ _ _
 * 작성한 CSS파일을 HTML에 추가하려면 `blog/templates/blog/post_list.html`파일을 다음과 같이 수정.    
     
   <b>blog/template/blog/post_list.html</b>       
-   ```html    
+{% raw %}  
+   ```html   
    {% load static %} 
    <html>
    <head>
@@ -148,8 +153,10 @@ _ _ _
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
    </head>
-   </html>
+   </html>  
    ```
+{% endraw %}    
+   
    
    
 * CSS 설정과 관련된 더 자세한 설명은 [여기](https://tutorial.djangogirls.org/ko/css/)를 참고.  
@@ -167,7 +174,8 @@ _ _ _
   그 다음 아래의 코드를 base.html에 작성한다.  
    
   <b>blog/template/blog/base.html</b>   
-  ```html
+{% raw %}   
+  ```html 
   {% load static %}
   <html>
       <head>
@@ -192,13 +200,19 @@ _ _ _
     </body>
   </html>
   ```   
+{% endraw %}   
+
    
    아래 코드는 ↓     
    
+
+{% raw %}  
    ```html 
    {% block content %}
    {% endblock %}　　
    ``` 
+{% endraw %}  
+   
       
    `block`을 의미한다. 템플릿 태그로 HTML내에 들어갈 수 있는 공간을 만든것이다.  
   이제 base.html을 확장해 다른 템플릿에도 가져다 쓸 수 있게되었다.  
@@ -206,8 +220,10 @@ _ _ _
    
 * 이제 blog/templates/blog/post_list.html에서 위에서 작성한 템플릿 코드를 확장하도록 아래와 같이 코드를 수정한다.  
   
-  <b>blog/templates/blog/post_list.html</b>  
-  ```html  
+  <b>blog/templates/blog/post_list.html</b>    
+    
+{% raw %}   
+  ```html
   {% extends 'blog/base.html' %}
   {% block content %}
   	  {% for post in posts %}
@@ -221,6 +237,8 @@ _ _ _
       {% endfor %}
   {% endblock %} 
   ```
+{% endraw %}  
+
   
    
 - - -    
