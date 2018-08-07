@@ -49,7 +49,6 @@ _ _ _
   
   <b>blog/templates/blog/post_list.html</b>   
   ```html
-{% raw %}{% highlight html %}
    <html>
     <head>
         <title>Django blog</title>
@@ -68,7 +67,6 @@ _ _ _
         {% endfor %}
     </body>
   </html>  
-{% endraw %}    
   ```   
    
    
@@ -78,8 +76,7 @@ _ _ _
     
   <b>blog/template/blog/post_list.html</b>       
    ```html    
-{% raw %}{% highlight html %}
-   {% load static %} 
+   {% raw %}{% load static %}{% endraw %} 
    <html>
    <head>
         <title>Django  blog</title>
@@ -87,8 +84,7 @@ _ _ _
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
    </head>
-   </html>
-{% endraw %}    
+   </html> 
    ```
    
   
