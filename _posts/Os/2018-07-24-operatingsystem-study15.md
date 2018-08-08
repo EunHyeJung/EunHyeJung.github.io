@@ -52,7 +52,7 @@ cover:  "/assets/instacode.png"
   계수기(Counter)나 스택(Stack)과 같은 별도의 하드웨어가 필요하며, 시간적인 오버헤드가 발생된다. (실제로 구현이 어려움)  
   (계수기 : 각 페이지별로 존재하는 논리적인 시계(Logical Clock)로, 해당 페이지가 사용될때마다 0으로 클리어 시킨 후 시간을 증가시켜 시간이 가장 오래된 페이지를 교체)   
    
-   
+     
   ![content02](/assets/contents/os_content11.PNG)  
    
     
