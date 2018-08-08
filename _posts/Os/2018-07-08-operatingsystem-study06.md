@@ -10,7 +10,7 @@ cover:  "/assets/instacode.png"
 ---
    
    
-### 프로세스의 개념  
+### 프로세스의 개념    
   
 * 실행중인 프로그램 : program in execution  
   디스크에 존재하던 프로그램이 메모리에 적재됨.  
