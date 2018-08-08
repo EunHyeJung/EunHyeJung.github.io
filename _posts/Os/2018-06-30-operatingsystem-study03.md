@@ -10,7 +10,7 @@ cover:  "/assets/instacode.png"
 ---
    
 
-### DMA(Direct Memory Access) 
+### DMA(Direct Memory Access)   
   
 * 원칙적으로 메모리는 CPU에 의해서만 접근이 가능한 장치이다. 
   따라서, 주변장치들이 메모리에 접근하기 위해서는 CPU에게 인터럽트를 발생시켜 CPU가 일을 대행하는 식으로만 가능하다.  
