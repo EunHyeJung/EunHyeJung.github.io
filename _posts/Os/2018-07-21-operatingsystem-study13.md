@@ -7,7 +7,7 @@ categories: os
 comment : true
 tags:	운영체제 OpeartingSystem OS
 cover:  "/assets/instacode.png"
----
+--- 
    
    
 ### 페이징(Paging) 기법       
