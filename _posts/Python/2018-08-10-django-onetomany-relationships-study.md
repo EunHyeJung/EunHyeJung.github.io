@@ -97,25 +97,28 @@ _ _ _
 #### <font color="#212930"> 필드값으로 데이터 추출하기  </font>     
   
   * 이름이 'John'인 리포터가 작성한 기사 가져오기  
+    
   ```python  
-  >>> Article.objects.filter(reporter__name = 'John')
-  <QuerySet [<Article: John's second story>, <Article: This is a test>]>
-  ```  
+   >>> Article.objects.filter(reporter__name = 'John')
+   <QuerySet [<Article: John's second story>, <Article: This is a test>]>
+  ```     
   
   
   * 이름이 'John'이고, 나이가 30세인 리포터가 작성한 기사 가져오기  
-  ```python  
-  >>> Article.objects.filter(reporter__name = 'John', reporter__age = 30)
-  <QuerySet [<Article: John's second story>, <Article: This is a test>]>
-  ```    
+      
+   ```python  
+   >>> Article.objects.filter(reporter__name = 'John', reporter__age = 30)
+   <QuerySet [<Article: John's second story>, <Article: This is a test>]>
+   ```    
   
   * 리포터의 key값으로 데이터 가져오기  
-  ```python  
-  >>> Article.objects.filter(reporter__pk = 1)
-  <QuerySet [<Article: John's second story>, <Article: This is a test>]>
-  >>> Article.objects.filter(reporter = 1)
-  <QuerySet [<Article: John's second story>, <Article: This is a test>]>
-  ```    
+     
+   ```python  
+   >>> Article.objects.filter(reporter__pk = 1)
+   <QuerySet [<Article: John's second story>, <Article: This is a test>]>
+   >>> Article.objects.filter(reporter = 1)
+   <QuerySet [<Article: John's second story>, <Article: This is a test>]>
+   ```      
   
   
   
