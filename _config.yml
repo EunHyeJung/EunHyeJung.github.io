@@ -53,8 +53,8 @@ descriptions:
   - cat: algorithm
     desc: "algorithm practice"
 
-  - cat: til
-    desc: "Today I Learned"
+ # - cat: til
+  #  desc: "Today I Learned"
 
   - cat: java
     desc: "java study"
