@@ -6,8 +6,7 @@ gems:
   - jekyll-paginate
 
 exclude:
-  - "/vendor/"
-  - "/_posts/Til"
+  [ "/vendor/", "/_posts/Til" ]
 
 # Site settings
 title: ehblog
