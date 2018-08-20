@@ -15,7 +15,7 @@ layout: default
 <div class="wrapper">
 <ul class="post-list">	
 {% for category in site.categories %}
-	{% if cateogry != 'til' %}
+	{% unless category contains 'til' %}
 		{% capture cat %}{{ category | first }}{% endcapture %}
 		<h2 id="{{cat}}">{{ cat | capitalize }}</h2>
 		{% for desc in site.descriptions %}
