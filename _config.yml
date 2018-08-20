@@ -7,7 +7,7 @@ gems:
 
 exclude:
   - "/vendor/"
-  - "/posts/TIL"
+  - "/_posts/Til"
 
 # Site settings
 title: ehblog
