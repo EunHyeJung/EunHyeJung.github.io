@@ -128,11 +128,27 @@ Setting.py는 프로젝트 환경설정에 대한 내용을 담고있다.
    
    
 - - -   
+  
+### 개발용 웹 서버 - runserver   
+  
+* 장고는 개발 과정에 현재의 웹 프로그램을 실행할 수 있도록 `runservr`라는 테스트용 웹서버를 제공.  
+  실제 상용화를 고려한다면 runserver대신, `Apache` 또는 `Nginx` 등의 상용 웹 서버를 사용해야함.  
+  개발용으로 제공되는 runserver는 상용 웹서버에 비해 처리능력이 떨어지고, 보안 취약    
+
+
+- - -      
+   
+### 애플리케이션 설계하기  
+   
+* 사용자의 눈에 보이는 화면 UI, 그 화면에 접속하기 위한 URL, 서버에서 필요한 테이블 및 처리 로직등의 설계 필요.   
+   
+   
+- - -   
    
 [참고사이트1](https://www.youtube.com/watch?v=LYmZB5IIwAI)   
 [참고사이트2](https://tutorial.djangogirls.org/ko/django_start_project/)   
-[참고사이트3](http://pythonstudy.xyz/python/article/304-Django-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)   
-　   
+[참고사이트3](http://pythonstudy.xyz/python/article/304-Django-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)     
+[참조책(Django를 활용한 쉽고 빠른 웹개발 파이썬 프로그래밍](http://bamall.co.kr/shop/goods/goods_view.php? goodsno=155787&inflow=naver&NaPm=ct%3Djlf8upd4%7Cci%3D24c473914337573d4d594c5605f431cc24f4726e%7Ctr%3Dsls%7Csn%3D528631%7Chk%3Ddc22b131ef391054315289133969b58821477e8a)　     
    
 　   
    
