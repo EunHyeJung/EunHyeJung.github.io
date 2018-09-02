@@ -92,8 +92,8 @@ cover:  "/assets/instacode.png"
 그 과정에서 리다이렉션이 일어날 수 있고, 템플릿 파일에서 URL 요청이 발생할 수도 있음.  
 -> 이런 과정들을 모두 고려해서 문서로 표현하는것이 로직 설계 과정!   
   
-/bookmark/ 　　->　　`BookmarkLV.as_view()`　　->　bookmark_list.html
-/bookmark/pk 　->　　`BookmarkDV.as_vew()`　　->　bookmark_detail.html     
+/bookmark/ 　　->　　`BookmarkLV.as_view()`　　->　bookmark_list.html   
+/bookmark/pk 　->　　`BookmarkDV.as_vew()`　　->　bookmark_detail.html        
    
 #### <font color ="#0E4D92"> URL 설계  </font>   
   
@@ -292,7 +292,8 @@ class BookmarkDV(DetailView) :
    
    
 ### Bookmark App 완성화면   
-   
+    
+   [전체 프로그램 소스](https://github.com/EunHyeJung/BookmarkApp)    
    
   ![content01](/assets/contents/django/content03.PNG)  
    
