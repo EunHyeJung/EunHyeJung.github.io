@@ -9,8 +9,8 @@ tags:	Django 장고 파이썬 Python
 cover:  "/assets/instacode.png"
 ---  
   
-### Django Virtualenv   
-    　
+### Django Virtualenv     
+  
   　
 * 파이썬에서는 프로젝트별로 독립된 가상 환경을 만들어주는 `virtualenv` 툴을 제공.  
   독립된 가상 환경이 필요한 이유는 인터넷에서 다운로드한 파이썬 라이브러리들이 충돌을 일으키는것을 방지하기 위함!   
@@ -21,17 +21,17 @@ cover:  "/assets/instacode.png"
      　
   　
 #### 가상환경 만들기  
-  　
-   　
+   
+     
 virtualenv를 만들때 필요한것은 만들곳을 지정해주기만 하면됨.   
   
     
 `$python -m venv virtualenvName`  
     
       
-#### 가상환경 사용하기 　  
-  　
-   　
+#### 가상환경 사용하기    
+   
+     
 위의 명령어를 통해 가상환경을 만들면 `virtualenvName`라는 이름의 폴더(디렉터리)가 만들어진다.  
 (이 폴더안에 우리가 사용할 가상환경이 들어있다.)  
 아래 명령어를 통해 가상환경을 실행할 수 있음!  
