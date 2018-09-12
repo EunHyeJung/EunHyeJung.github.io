@@ -92,12 +92,11 @@ cover:  "/assets/instacode.png"
   
   
 - - -  
-　
- 　
-[참고1_프로그래머스_자바중급](https://programmers.co.kr/learn/courses/9/lessons/280)
-[참고2_TCPSCHOOL.com](http://tcpschool.com/java/java_lambda_concept)    
-[참3_NaverD2](https://d2.naver.com/helloworld/4911107)   
+  
+[참고1_프로그래머스_자바중급](https://programmers.co.kr/learn/courses/9/lessons/280)  
+[참고2_TCPSCHOOL.com](http://tcpschool.com/java/java_lambda_concept)  
+[참3_NaverD2](https://d2.naver.com/helloworld/4911107)  
    
-     
+       
         
    
