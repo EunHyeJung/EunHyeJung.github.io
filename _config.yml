@@ -62,6 +62,9 @@ descriptions:
   - cat: os
     desc: "operating system"
     
+  - cat: network,server
+    desc: "netwrok,server"   
+    
   - cat: data_analysis
     desc: "Bigdata, DataAnalysis, DataScience"
     
