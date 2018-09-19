@@ -10,7 +10,7 @@ cover:  "/assets/instacode.png"
 ---   
           
    
-###  <font color = "#0E4D92"> 웹 구성요소 </font>     
+##  <font color = "#0E4D92"> 웹 구성요소 </font>     
 
 웹페이지를 만들어주는 <b> HTML </b>   
 원하는 웹페지에 방문하도록 도와주는 주소체계인 <b>URL(Uniform Resource Locator)</b>   
@@ -19,7 +19,7 @@ cover:  "/assets/instacode.png"
         
 - - -   
           
-###  <font color = "#0E4D92"> HTTP (HyperText Transfer Protocol)  </font>  
+## <font color = "#0E4D92"> HTTP (HyperText Transfer Protocol)  </font>  
  
 웹 서버와 웹 클라이언트 사이에서 데이터를 주고받을 때 사용되는 통신규칙  
 * 웹 브라우저는 웹 서버에 접근할때 메서드(Method)와 URL을 보낸다. (Request Message)  
@@ -30,9 +30,8 @@ HTTP는 Request와 Response를 위한 메시지로 구분되어 있다.
 　  
 - - -  
     
-　  
-###  <font color = "#0E4D92"> Reqeust Message </font>    
-　  
+##  <font color = "#0E4D92"> Reqeust Message </font>    
+  
      
 Request Header와 Request Body는 중간에 빈 줄(Blank Line)으로 구분한다!  
   
@@ -40,7 +39,7 @@ Request Header와 Request Body는 중간에 빈 줄(Blank Line)으로 구분한�
   ![content01](/assets/contents/network/content01_httprequestmsg.PNG)    
   
   
-#### Request Line   
+### Request Line   
    
 ` GET /content1.html HTTP/1.1 `   
   
@@ -49,7 +48,7 @@ Request Header와 Request Body는 중간에 빈 줄(Blank Line)으로 구분한�
 <b>HTTP/1.1</b> : 웹브라우저게 현재 사용하고 있는(사용할 수 있는) HTTP 버전이 1.1이라는 뜻.  
    
    
-#### Request Headers  
+### Request Headers  
    
 `Host : www.httpstduy.com`   
   
@@ -71,8 +70,7 @@ Windows NT 6.2; Win64; x64은 내가 사용중인 운영체제가 윈도우이�
 　  
 - - -  
     
-　  
-###  <font color = "#0E4D92"> Response Message </font>    
+##  <font color = "#0E4D92"> Response Message </font>    
   
 Response Header와 Response Body는 중간에 빈 줄(Blank Line)으로 구분한다!  
   
@@ -95,10 +93,10 @@ HTTP 프토로콜은 연결 상태를 유지하지 않는 <b>Connectionless</b> 
 timeout값은 커넥션 유지시간을 나타내고 max는 최대요청개수를 제한할때 사용  
    
 　
-- - - 
-  
+- - -
     
-#### HTTP STATUS CODE   
+### HTTP STATUS CODE   
+  
   
 * <b> 1XX (조건부 응답)</b> : 요청을 받았으며 작업을 계속  
   `100(계속)` : 요청자는 요청을 계속해야함. 서버는 이 응답코드를 통해 요청의 첫번째 부분을 받았으며 나머지를 기다리고 있음을 나타냄.  
@@ -123,3 +121,14 @@ timeout값은 커넥션 유지시간을 나타내고 max는 최대요청개수�
   `501(구현되지 않음)` : 서버에 요청을 수행할 수 있는 기능이 없음, 서버가 요청 메소드를 인식할 수 없을때.  
   
 더 자세한 내용은 [위키피디아 HTTP 상태코드](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C) 참고  
+  
+  
+    
+- - -   
+　 
+   
+[참고 : 생활코딩(WEB2-HTTP)](https://www.youtube.com/watch?v=t7ASgtJoVz4&index=1&list=PLuHgQVnccGMBd-v_DjNm61EBaDpYZSV1Z)    
+　  
+   
+   
+      
