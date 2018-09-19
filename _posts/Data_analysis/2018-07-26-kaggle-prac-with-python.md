@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Kaggle-타이타닉 생존자 예측하기(Python) - 01"
+title:  "Kaggle-타이타닉 생존자 예측하기(Python)"
 date:   2018-07-25
 author: EunHye Jung
-categories: bigdata
-tags: bigdata
+categories: data_analysis
+tags: bigdata dataanalysis 데이터분석 kaggle 
 cover:  "/assets/instacode.png"
 ---  
 
