@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "템플릿 패턴(Template Pattern)"
+title:  "디자인패턴 : 템플릿 패턴(Template Pattern)"
 date:   2018-07-06
 author: EunHye Jung
 categories: java
-tags:	designpattern java
+tags:	designpattern 디자인패턴 템플릿패턴 java
 comment : true
 cover:  "/assets/instacode.png"
 ---
 
-### 템플릿 패턴(Template Pattern) 
+##  자바 디자인 패턴 - <font color = "#0E4D92"> 템플릿 패턴(Template Pattern)  </font>
   
 * `상위클래스에서 처리의 흐름을 결정하고, 하위클래스에서 구체적인 내용을 결정하는 디자인패턴`
 * 상위클래스에서 `템플릿 역할을 하는 메소드`가 정의되어 있음.  
