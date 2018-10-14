@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "팩토리 메소드 패턴(Factory Method Pattern)"
+title:  "디자인 패턴 : 팩토리 메소드 패턴(Factory Method Pattern)"
 date:   2018-07-07
 author: EunHye Jung
 categories: java
@@ -9,7 +9,7 @@ comment : true
 cover:  "/assets/instacode.png"
 ---
 
-### 팩토리 메소드 패턴(Factory Method Pattern)
+##  자바 디자인 패턴 - <font color = "#0E4D92">  팩토리 메소드 패턴(Factory Method Pattern) </font>
   
 * `인스턴스 생성을 하위 클래스에 위임`  
 * 템플릿 메소드 패턴을 변경한 패턴으로  
@@ -183,7 +183,8 @@ public class Main {
 ```
     
        
-
+- - -  
+  
     
 * 팩토리메소드 패턴과 관련된 패턴  
   * 템플릿 메소드 패턴 (Template Method Pattern)  
