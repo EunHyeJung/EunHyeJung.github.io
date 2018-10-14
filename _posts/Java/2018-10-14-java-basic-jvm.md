@@ -3,7 +3,7 @@ layout: post
 title:  "기초 : 자바 프로그램 실행과정, JVM"
 date:   2018-10-14
 author: EunHye Jung
-categories: network,server
+categories: java
 comment : true
 tags:	java, 자바, JVM, 자바가상머신
 cover:  "/assets/instacode.png"
