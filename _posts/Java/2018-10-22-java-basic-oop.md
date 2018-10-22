@@ -80,11 +80,11 @@ private → default → protected → public 으로 갈수록 접근 가능한 �
 ##  <font color = "#0E4D92"> 오버로딩(Overloading), 오버라이딩(Overriding) </font>  
   
 ### <font color="#04635b"> 오버로딩(Overloading) </font>  
-* 같은 메소드 명을 가지지만 매개변수 갯수, 타입을 다르게 지정하는 방식  
+* 같은 메소드 명을 가지지만 매개변수 갯수, 타입을 다르게 지정하는 방식.  
    
   
 ### <font color="#04635b"> 오버라이딩(Overriding) </font>  
-* 상위 클래스의 메소드를 하위 클래스가 재정의하여 사용하는   
+* 상위 클래스의 메소드를 하위 클래스가 재정의하여 사용하는 방식.   
    
    
     
