@@ -84,7 +84,7 @@ private → default → protected → public 으로 갈수록 접근 가능한 �
    
   
 ### <font color="#04635b"> 오버라이딩(Overriding) </font>  
-* 상위 클래스의 메소드를 하위 클래스가 재정의하여 사용하는 바익  
+* 상위 클래스의 메소드를 하위 클래스가 재정의하여 사용하는   
    
    
     
