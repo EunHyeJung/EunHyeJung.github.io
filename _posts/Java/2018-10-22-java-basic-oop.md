@@ -3,7 +3,7 @@ layout: post
 title:  "기초 : 클래스, 객체, 객체지향 언어의 특징"
 date:   2018-10-22
 author: EunHye Jung
-categories: network,server
+categories: java
 comment : true
 tags:	java, 자바, 클래스, 객체, 객체지향
 cover:  "/assets/instacode.png"
