@@ -61,7 +61,8 @@ SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;
 STATION 테이블에서 도시명(CITY)의 총 개수와, 중복된 도시명(CITY)을 제외한 개수의 차이값을 구할 것.   
    
 ```sql  
-SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;   
+SELECT (COUNT(CITY) - COUNT(DISTINCT CITY))
+FROM STATION;   
 ``` 
    
     
