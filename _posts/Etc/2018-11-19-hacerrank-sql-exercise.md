@@ -54,6 +54,20 @@ SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;
 - - -     
     
     
+###  <font color = "#0E4D92"> Weather Observation Station4 </font>    
+  
+[링크](https://www.hackerrank.com/challenges/weather-observation-station-4/problem)  
+  
+STATION 테이블에서 도시명(CITY)의 총 개수와, 중복된 도시명(CITY)을 제외한 개수의 차이값을 구할 것.   
+   
+```sql  
+SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;   
+``` 
+   
+    
+- - -     
+    
+    
 ###  <font color = "#0E4D92"> Weather Observation Station5 </font>    
     
 [링크](https://www.hackerrank.com/challenges/weather-observation-station-5/problem)    
