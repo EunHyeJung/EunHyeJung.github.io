@@ -7,7 +7,10 @@ categories: .net,csharp
 comment : true
 tags: server network http
 cover:  "/assets/instacode.png"
----
+---  
+
+### DataBinder.Eval Method   
+   
 
 Repeater나 DataList, DataGrid와 같은 컨트롤은 데이터 바인딩에 템플릿(template)을 사용한다.  
 이때 실제 데이터 소스와 연결된 것은 아이템을 구성하는 템플릿이 아니라 이를 포함하고 있는 부모 객체 이므로,  
