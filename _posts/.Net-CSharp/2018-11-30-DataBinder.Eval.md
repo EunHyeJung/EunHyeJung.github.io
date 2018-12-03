@@ -3,7 +3,7 @@ layout: post
 title:  "DataBinder.Eval Method"
 date:   2018-11-30
 author: EunHye Jung
-categories: .net,csharp
+categories: .Net-CSharp
 comment : true
 tags: server network http
 cover:  "/assets/instacode.png"
