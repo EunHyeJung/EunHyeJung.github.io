@@ -3,9 +3,9 @@ layout: post
 title:  "ASP.NET Rich Control"
 date:   2018-12-05
 author: EunHye Jung
-categories: csharp,dotnet,richcontrol
+categories: csharp,dotnet
 comment : true
-tags: csharp dotnet asp.net
+tags: csharp dotnet asp.net richcontrol
 cover:  "/assets/instacode.png"
 ---  
    
