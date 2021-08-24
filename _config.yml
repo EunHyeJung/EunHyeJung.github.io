@@ -50,7 +50,7 @@ disqus_id : eunhyejung
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: javscript
+  - cat: javascript
     desc: "javascript study"
     
   - cat: csharp,dotnet
